@@ -18,7 +18,7 @@ pySenior = Subject('Python', 'Senior', True) #Надання значень
 print(pySenior.name, pySenior.level, pySenior.hours)
 
 
-class Group: # Описання групи
+class Group: # Описання групи і встановлення типів даних через які будуть надаватися значення через str надали текст
     name: str
     qty_students: int
     study_subject: Subject
@@ -32,3 +32,4 @@ group = Group("C2117", 21 , pySenior.name) #Надання значень
 print(group.name, group.qty_students, group.study_subject) #Вивід інформації
 
 #Subject -- входить в группу pySenior, а группа до інших змінних
+
