@@ -1,0 +1,25 @@
+print("Hello world!")
+
+new*
+
+class Subject: #Описание класса
+    name = str
+    level = str
+    hours = int
+    isStudy = bool
+
+    dev init(self, name, level, hours=18, isStudy):
+        self.name = name
+        self.level = level
+        self.hours = hours
+        self.isStudu = isStudy
+
+pySenior = Subject("Python", "Senior", True) #Надавання значень
+print(pySenior.name, pySenior.level, pySenior.hours) #вивід классу
+
+class Group: # Описание
+    name = str
+    students = int
+    subject = subject
+
+    def init (self, name, students, subject):
