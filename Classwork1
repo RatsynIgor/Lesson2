@@ -1,0 +1,34 @@
+print('Lesson3!')
+
+
+class Subject: #Описание класса
+    name: str
+    level: str
+    hours: int
+    is_study: bool
+
+    def __init__(self, name: str, level: str, is_study: bool, hours=18): #функція буде інюцюювати всі елементи змінної вказує їм адресу в пам'яті
+        self.name = name
+        self.level = level
+        self.hours = hours
+        self.is_study = is_study
+
+
+pySenior = Subject('Python', 'Senior', True) #Надання значень
+print(pySenior.name, pySenior.level, pySenior.hours)
+
+
+class Group: # Описання групи
+    name: str
+    qty_students: int
+    study_subject: Subject
+
+    def __init__(self, name: str, qty_students: int, study_subject: Subject): # Тип змінної Subject до якого передаємо складну змінну яка має іншні данні
+        self.name = name
+        self.qty_students = qty_students
+        self.study_subject = study_subject
+
+group = Group("C2117", 21 , pySenior.name) #Надання значень
+print(group.name, group.qty_students, group.study_subject) #Вивід інформації
+
+#Subject -- входить в группу pySenior, а группа до інших змінних
